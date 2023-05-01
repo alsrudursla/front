@@ -8,12 +8,13 @@
     </head>
 
     <body>
-        <form id="login-form">
+        <form id="login-form" class="hidden">
             <!-- required : 필수 작성 요소 -->
-            <!-- ㅠㅠ -->
             <input required maxlength="15" type="text" placeholder="What is your name?"/>
             <input type="submit" value="Log In"/>
-        </form>
+        </form> <!-- form 은 submit 을 기다리는 중 -->
+        <!-- hidden : 요소 숨기기 (존재하지만 숨겨져 있음) -->
+        <h1 id="greeting" class="hidden"></h1>
         <script src="app.js"></script>
     </body>
 </html>
