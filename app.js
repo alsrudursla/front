@@ -13,10 +13,6 @@ const HIDDEN_CLASSNAME = "hidden";
 
 const USERNAME_KEY = "username";
 
-function paintGreetings(username){
-    greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-}
 
 function onLoginSubmit(event) {
     event.preventDefault();     // 브라우저의 기본 동작 막기
