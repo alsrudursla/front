@@ -8,20 +8,35 @@
     </head>
 
     <body>
+        <!--CLOCK-->
+        <h2 id="clock">00:00:00</h2>
+
+        <!--LOGIN-->
         <form id="login-form" class="hidden">
             <!-- required : 필수 작성 요소 -->
             <input required maxlength="15" type="text" placeholder="What is your name?"/>
             <input type="submit" value="Log In"/>
         </form> <!-- form 은 submit 을 기다리는 중 -->
         <!-- hidden : 요소 숨기기 (존재하지만 숨겨져 있음) -->
-        <h2 id="clock">00:00:00</h2>
         <h1 id="greeting" class="hidden"></h1>
+
+        <!--TODO-LIST-->
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+        <ul id="todo-list"></ul> <!--list 생성 : js 로 요소 추가-->
+
+        <!--QUOTE-->
         <div id="quote">
             <span></span>
             <span></span>
         </div>
+
+        <!--SCRIPT-->
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>
         <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
     </body>
 </html>
